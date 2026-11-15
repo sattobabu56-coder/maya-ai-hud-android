@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#050816"><meta name="description" content="Maya AI HUD mobile dashboard">
+<link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css">
+<title>Maya AI HUD</title>
+</head>
+<body>
+<div class="stars" aria-hidden="true"></div>
+<header class="topbar"><div class="brand"><span class="brand-dot"></span><div><b>MAYA</b><small>AI SYSTEM INTERFACE</small></div></div><span class="live"><i></i> MOBILE HUD</span></header>
+<main>
+<section class="hero">
+  <div class="eyebrow">QUANTUM CORE / MOBILE EDITION</div>
+  <div class="orb-wrap"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orb"><div class="orb-core"><span>MAYA</span><small>AI CORE</small></div></div></div>
+  <h1>System <span>Online</span></h1><p class="sub">Your futuristic AI dashboard, adapted for mobile.</p>
+  <div class="status-line"><span class="pulse"></span><span id="clock">--:--:--</span><span class="sep">•</span><span id="connection">Checking connection</span></div>
+</section>
+<section class="grid">
+  <article class="panel"><div class="panel-head"><span>DEVICE CPU</span><b class="tag">BROWSER LIMIT</b></div><div class="metric unavailable">—</div><p>Android browsers do not expose live CPU usage to websites.</p></article>
+  <article class="panel"><div class="panel-head"><span>MEMORY</span><b class="tag">BROWSER LIMIT</b></div><div class="metric unavailable">—</div><p>Full device RAM usage is restricted by Android privacy controls.</p></article>
+  <article class="panel"><div class="panel-head"><span>GPU / TEMP</span><b class="tag">NOT EXPOSED</b></div><div class="metric unavailable">—</div><p>GPU load and hardware temperature need a native Android app.</p></article>
+  <article class="panel"><div class="panel-head"><span>NETWORK</span><b class="tag" id="net-tag">STATUS</b></div><div class="metric" id="net-value">Online</div><p id="net-detail">Browser connection status</p></article>
+</section>
+<section class="panel audio-panel">
+  <div class="panel-head"><span>MICROPHONE VISUALIZER</span><b class="tag" id="mic-state">OFF</b></div>
+  <div class="visualizer" id="bars" aria-label="Microphone audio level"></div>
+  <div class="audio-bottom"><span id="mic-message">Tap Start to allow microphone access.</span><button id="mic-btn">START MIC</button></div>
+</section>
+<section class="panel info-panel"><div class="panel-head"><span>CORE MODULES</span><b class="tag">MOBILE READY</b></div>
+  <div class="module"><span class="module-icon">✦</span><div><b>Quantum Orb</b><small>Animated interface core</small></div><em class="ok">ACTIVE</em></div>
+  <div class="module"><span class="module-icon">◉</span><div><b>Audio Input</b><small>Microphone level visualization</small></div><em id="audio-module" class="wait">STANDBY</em></div>
+  <div class="module"><span class="module-icon">▦</span><div><b>Device Metrics</b><small>Native Android bridge required</small></div><em class="wait">LIMITED</em></div>
+</section>
+<footer>MAYA AI HUD <span>•</span> MOBILE WEB EDITION <span>•</span> v1.0</footer>
+</main><script src="app.js"></script>
+</body></html>
